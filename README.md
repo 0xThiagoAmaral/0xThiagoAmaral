@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://github.com/thiagoamaral/banner.png" alt="TH - Ethical Hacker" style="max-width: 100%;" />
-</p>
-
 <h1 align="center">👋 Olá, sou o Thiago Amaral</h1>
 <h3 align="center">Ethical Hacker em construção | Automação | Segurança da Informação | Criador de Conteúdo Técnico</h3>
 
@@ -17,7 +13,7 @@
 
 ## 🔐 Quem sou eu?
 
-Graduado em Defesa Cibernética e finalizando uma pós em Segurança da Informação, larguei meu emprego como técnico de T.I para me dedicar 100% ao meu plano de execução extrema: **me tornar referência prática em cibersegurança**.
+Graduado em Defesa Cibernética e finalizando uma pós em Segurança da Informação, larguei meu emprego como técnico de T.I para me dedicar 100% ao meu plano de execução extrema: **me tornar referência  em Segurança da Informação**.
 
 ---
 
@@ -28,7 +24,7 @@ Durante os próximos 90 dias, estou:
 - Criando e publicando conteúdo técnico prático
 - Transformando tudo em repositórios públicos aqui no GitHub
 - Documentando meu progresso de forma transparente
-- Acelerando minha fluência em inglês técnico (leitura 90%, escuta 40%, fala 15%)
+- Acelerando minha fluência em inglês, pra sair do nível técnico.
 
 ---
 
