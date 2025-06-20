@@ -1,5 +1,5 @@
 <h1 align="center">👋 Olá, sou o Thiago Amaral</h1>
-<h3 align="center">Analista de TI migrando para CyberSecurity, apaixonado por IA, mapeamento de processos e automações de tarefas repetitivas. Sempre penso em como executar tarefas sem perder qualidade e acelerando o trabalho com inteligência.</h3>
+<h3 align="center">Analista de TI migrando para CyberSecurity, apaixonado por IA, mapeamento de processos e automações de tarefas repetitivas.</h3>
 
 ---
 
