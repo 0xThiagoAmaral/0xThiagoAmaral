@@ -4,7 +4,6 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Executando%2090%20Dias%20de%20Execução%20Extrema-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Skills-Automação%2C%20CyberSec%2C%20Scripts-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/TryHackMe-Ativo-red?style=for-the-badge&logo=tryhackme" />
 </p>
