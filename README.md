@@ -76,7 +76,9 @@ Core technologies applied across these projects and in daily operational routine
 ## Education and Background
 
 - **Education:**
-  - **B.S. in Cyber Defense** (*Graduação em Defesa Cibernética*)
-  - **Postgraduate Specialization in Information Security** (*Pós-graduação em Segurança da Informação*)
+  - **Postgraduate Specialization in Information Security** (*Pós-graduação Lato Sensu em Segurança da Informação*) — PUCPR (360h, 2024–2025).
+  - **B.S. in Cyber Defense** (*Graduação em Defesa Cibernética*) — Estácio (2019–2021).
+- **Practical Training & Labs:**
+  - **SOC Level 1 Learning Path** — TryHackMe (87h 50m of defensive simulation: SIEM, traffic analysis, and incident triage).
 - **Career Path:**
   - Progressive enterprise IT infrastructure experience, advancing from technical intern to Tier-1, Tier-2, and Tier-3 support and infrastructure analyst.
