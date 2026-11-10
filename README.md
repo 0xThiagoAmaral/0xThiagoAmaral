@@ -1,67 +1,63 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Thiago Amaral (0xThiagoAmaral) — IT Infrastructure &amp; Systems Research" src="assets/banner-light.svg" width="100%">
+  <img src="assets/banner-light.svg" alt="0xThiagoAmaral / Research System — systems, security and technical research" width="100%">
 </picture>
 
 # Thiago Amaral
 
-**IT Support & Infrastructure (Tier 1–3) → Systems Security & Applied AI Research**<br>
-[GitHub](https://github.com/0xThiagoAmaral) · [LinkedIn](https://www.linkedin.com/in/thiago-infosec/)
+**IT infrastructure · Systems research · Security tooling**
 
-[Overview](#overview) · [Background & Focus](#background-and-focus) · [Projects](#projects) · [Technologies](#technologies) · [Education & Background](#education-and-background)
+My professional background is in IT support and infrastructure, from technical internship to Tier-3 support. Outside that work, I build and document tools for understanding how software and systems behave: process memory inspection, Source 2 data extraction and automation. I'm also exploring applications of AI in technical workflows.
 
----
-
-## Overview
-
-My professional background is in corporate IT support and infrastructure, progressing from technical intern to Tier-3 support and infrastructure analyst. That operational work involved administering production operating systems, network topologies, storage pools, enterprise backups, and troubleshooting incidents under SLA constraints.
-
-Alongside that infrastructure foundation, I conduct independent technical research focused on **systems security**, **binary analysis**, and **applied AI** through hands-on codebases.
+[Repositories](https://github.com/0xThiagoAmaral?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/thiago-infosec/) · [Live asset catalog](https://0xthiagoamaral.github.io/deadlock-open-assets/)
 
 ---
 
-## Background and Focus
+## 01 / Selected work
 
-My technical focus bridges corporate operations with low-level systems engineering:
+### [Deadlock Open Assets](https://github.com/0xThiagoAmaral/deadlock-open-assets)
+`Python` · `Source 2` · `VPK` · `JSON manifests`
 
-```mermaid
-flowchart LR
-    A["Enterprise IT Infrastructure<br/>Tier 1–3 Support & NOC Operations"] -->|"Operational Foundation"| B["Systems Security & Binary Analysis<br/>Memory Inspection & AoB Scanning"]
-    A -->|"Automation & Discipline"| C["Applied AI & Tooling Pipelines<br/>Asset Extraction & Autonomous Workflows"]
-```
+An extraction and indexing pipeline for *Deadlock* game assets. It organizes UI images, game data and resource paths into a searchable catalog and structured manifests that other tools can consume.
 
-- **Systems & Binary Analysis**: Low-level Windows internals, process memory inspection, pattern scanning, and game runtime reverse engineering.
-- **Infrastructure & Automation**: Linux/Windows server administration, enterprise backup and monitoring configurations, asset extraction pipelines, and agent environment tooling.
+**Explore:** [Live catalog](https://0xthiagoamaral.github.io/deadlock-open-assets/) · [Extraction tools](https://github.com/0xThiagoAmaral/deadlock-open-assets/tree/main/tools) · [Manifests](https://github.com/0xThiagoAmaral/deadlock-open-assets/tree/main/manifests)
 
----
+### [Deadlock Nightmare Dumper](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper)
+`Python` · `Windows process memory` · `Pymem` · `AoB signatures`
 
-## Projects
+An experimental utility that attaches to the *Deadlock* process, scans selected modules for byte patterns and exports offset data as JSON, C++ and C# definitions. Some class offsets are hardcoded; pattern matches and runtime compatibility depend on the game build.
 
-| Project & Stack | Core Architecture & Focus | Status & Artifacts |
-| :--- | :--- | :--- |
-| [**Deadlock-Nightmare-Dumper**](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper)<br>`Python` · `Pymem` · `AoB Scanning` | Memory scanner targeting Valve's Deadlock (`deadlock.exe`). Inspects `client.dll` and `engine2.dll` to locate dynamic global offsets (`dwEntityList`, `dwViewMatrix`), serializing offsets to JSON alongside static C++/C# headers. | `Experimental`<br>Runtime offset compatibility unverified against newest game builds. |
-| [**deadlock-open-assets**](https://github.com/0xThiagoAmaral/deadlock-open-assets)<br>`Python` · `VPK Parsing` · `GitHub Pages` | Automated asset extraction workflow unpacking game VPK archives into organized vector UI components, hero ability icons, and structured JSON manifests (`heroes.json`, `items.json`). | `Published Catalog`<br>[Catalog Site ↗](https://0xthiagoamaral.github.io/deadlock-open-assets/) |
-| [**noc-lab**](https://github.com/0xThiagoAmaral/noc-lab)<br>`Linux` · `Bacula` · `Zabbix` | Practical laboratory runbook repository documenting systems administration, network protocols (NFS, SMB, iSCSI), backup configurations with Bacula Community, and telemetry with Zabbix and Grafana. | `Reference Runbook`<br>Modular setup guides across 10 operational areas. |
+**Inspect:** [Scanner implementation](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper/blob/main/nightmare_dumper.py) · [Repository and limitations](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper)
 
----
+### [NOC Lab](https://github.com/0xThiagoAmaral/noc-lab)
+`Linux / Windows` · `Bacula` · `Zabbix` · `Shell`
 
-## Technologies
+A collection of infrastructure lab notes and runbooks covering backups, monitoring, network storage and troubleshooting. It documents configurations and operational procedures alongside scripts and practice scenarios.
 
-Core technologies applied across these projects and in daily operational routines:
-
-- **Systems & Memory Research:** Python (`Pymem`), process memory inspection, pattern scanning (AoB), PE structures.
-- **Automation & Tooling:** Python CLI scripts, Bash, PowerShell, VPK archive extraction, JSON manifests and data serialization.
-- **Infrastructure & Operations:** Linux (Debian, Ubuntu Server, CentOS), Windows Server, Bacula Community, Zabbix, Grafana, network storage (NFS, SMB, iSCSI), virtualization (Hyper-V, KVM).
+**Inspect:** [Backup runbooks](https://github.com/0xThiagoAmaral/noc-lab/tree/main/03-backup-solutions) · [Lab documentation](https://github.com/0xThiagoAmaral/noc-lab)
 
 ---
 
-## Education and Background
+## 02 / Background and focus
 
-- **Education:**
-  - **Postgraduate Specialization in Information Security** (*Pós-graduação Lato Sensu em Segurança da Informação*) — PUCPR (360h, 2024–2025).
-  - **B.S. in Cyber Defense** (*Graduação em Defesa Cibernética*) — Estácio (2019–2021).
-- **Practical Training & Labs:**
-  - **SOC Level 1 Learning Path** — TryHackMe (87h 50m of defensive simulation: SIEM, traffic analysis, and incident triage).
-- **Career Path:**
-  - Progressive enterprise IT infrastructure experience, advancing from technical intern to Tier-1, Tier-2, and Tier-3 support and infrastructure analyst.
+I progressed through Tier-1, Tier-2 and Tier-3 support and infrastructure roles, working with Windows/Linux systems, backups, storage, monitoring and incident troubleshooting. That operational background informs how I approach independent research: inspect the system, verify assumptions and document the results.
+
+Current areas of interest include:
+
+- **Systems and reverse engineering:** Windows internals, process memory, binary analysis and game runtime research.
+- **Automation and data tooling:** Python, shell scripts, extraction pipelines and structured outputs.
+- **Information security and applied AI:** security research, repeatable experiments and evaluation of AI-assisted workflows.
+
+<details>
+<summary><strong>Education and practical training</strong></summary>
+
+- **Postgraduate specialization in Information Security** — PUCPR (2024–2025).
+- **Degree in Cyber Defense** — Estácio (2019–2021).
+- **SOC Level 1 learning path** — TryHackMe, as practical training and laboratory study.
+
+</details>
+
+---
+
+**Contact:** [LinkedIn](https://www.linkedin.com/in/thiago-infosec/) · **More code:** [All repositories](https://github.com/0xThiagoAmaral?tab=repositories)
