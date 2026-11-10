@@ -23,7 +23,13 @@ Alongside that infrastructure foundation, I conduct independent technical resear
 
 ## Background and Focus
 
-My technical focus bridges two complementary areas:
+My technical focus bridges corporate operations with low-level systems engineering:
+
+```mermaid
+flowchart LR
+    A["Enterprise IT Infrastructure<br/>Tier 1–3 Support & NOC Operations"] -->|"Operational Foundation"| B["Systems Security & Binary Analysis<br/>Memory Inspection & AoB Scanning"]
+    A -->|"Automation & Discipline"| C["Applied AI & Tooling Pipelines<br/>Asset Extraction & Autonomous Workflows"]
+```
 
 - **Systems & Binary Analysis**: Low-level Windows internals, process memory inspection, pattern scanning, and game runtime reverse engineering.
 - **Infrastructure & Automation**: Linux/Windows server administration, enterprise backup and monitoring configurations, asset extraction pipelines, and agent environment tooling.
@@ -32,34 +38,11 @@ My technical focus bridges two complementary areas:
 
 ## Projects
 
-### [Deadlock-Nightmare-Dumper](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper)
-*Stack: Python, Pymem, JSON*
-
-A Python utility designed to scan target process memory in Valve's Deadlock (`deadlock.exe`). It uses `Pymem` to attach to the process and perform Array-of-Bytes (AoB) signature matching against `client.dll` and `engine2.dll` to find dynamic global offsets (`dwEntityList`, `dwLocalPlayerController`, `dwViewMatrix`, and `dwGlobalVars`).
-
-The script serializes discovered global offsets along with predefined class offset structures and bone indices into `nightmare_offsets.json`. Static header definition files for C++ (`nightmare_offsets.hpp`) and C# (`nightmare_offsets.cs`) are committed in the repository.
-
-*Scope note:* Runtime scanning accuracy and offset compatibility with recent game builds remain unverified. The Python script outputs JSON directly; writing `.hpp` and `.cs` from runtime data is not implemented in the script.
-
----
-
-### [deadlock-open-assets](https://github.com/0xThiagoAmaral/deadlock-open-assets)
-*Stack: Python, Batch, VPK parsing, GitHub Pages*
-
-An asset extraction workflow and static catalog for Deadlock UI and gameplay resources. The repository contains a Python extraction script (`tools/extract_deadlock_assets.py`) that unpacks game VPK archives into organized assets (vector UI components, hero ability icons, and particle metadata) alongside structured JSON manifests (`manifests/heroes.json`, `items.json`).
-
-Extracted resources are published through an open static catalog site hosted on GitHub Pages.
-
-- **Catalog site:** [0xthiagoamaral.github.io/deadlock-open-assets](https://0xthiagoamaral.github.io/deadlock-open-assets/)
-
----
-
-### [noc-lab](https://github.com/0xThiagoAmaral/noc-lab)
-*Stack: Linux (Debian/CentOS), Windows Server, Bacula, Zabbix, Grafana, rsync*
-
-A personal study laboratory and reference runbook repository documenting systems administration, network protocols, and infrastructure operations.
-
-It provides modular Markdown reference guides and setup walkthroughs across 10 operational areas, including virtualized environments, network storage protocols (NFS, SMB, iSCSI), backup configurations using Bacula Community and rsync, and metric collection with Zabbix and Grafana.
+| Project & Stack | Core Architecture & Focus | Status & Artifacts |
+| :--- | :--- | :--- |
+| [**Deadlock-Nightmare-Dumper**](https://github.com/0xThiagoAmaral/Deadlock-Nightmare-Dumper)<br>`Python` · `Pymem` · `AoB Scanning` | Memory scanner targeting Valve's Deadlock (`deadlock.exe`). Inspects `client.dll` and `engine2.dll` to locate dynamic global offsets (`dwEntityList`, `dwViewMatrix`), serializing offsets to JSON alongside static C++/C# headers. | `Experimental`<br>Runtime offset compatibility unverified against newest game builds. |
+| [**deadlock-open-assets**](https://github.com/0xThiagoAmaral/deadlock-open-assets)<br>`Python` · `VPK Parsing` · `GitHub Pages` | Automated asset extraction workflow unpacking game VPK archives into organized vector UI components, hero ability icons, and structured JSON manifests (`heroes.json`, `items.json`). | `Published Catalog`<br>[Catalog Site ↗](https://0xthiagoamaral.github.io/deadlock-open-assets/) |
+| [**noc-lab**](https://github.com/0xThiagoAmaral/noc-lab)<br>`Linux` · `Bacula` · `Zabbix` | Practical laboratory runbook repository documenting systems administration, network protocols (NFS, SMB, iSCSI), backup configurations with Bacula Community, and telemetry with Zabbix and Grafana. | `Reference Runbook`<br>Modular setup guides across 10 operational areas. |
 
 ---
 
