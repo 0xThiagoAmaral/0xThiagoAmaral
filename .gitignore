@@ -1,0 +1,87 @@
+# ==============================================================================
+# .gitignore — 0xThiagoAmaral Research System
+# ==============================================================================
+
+# 1. Variáveis de Ambiente e Arquivos de Configuração Local
+.env
+.env.*
+!.env.example
+!.env.template
+
+# 2. Chaves Criptográficas e Credenciais
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+*secret*.key
+*secret*.env
+
+# 3. Tokens Específicos (evitando wildcard genérico que esconde código legítimo)
+*.token
+*.tokens
+token.txt
+tokens.json
+
+# 4. Ambientes Virtuais e Dependências Locais
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 5. Python Bytecode e Caches de Execução
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 6. Ferramentas de Teste, Cobertura e Tipagem
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+# 7. Logs, Arquivos Temporários e Caches do Sistema
+*.log
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 8. Diretórios e Artefatos Temporários de Análise/Scratch
+scratch/
+tmp/
