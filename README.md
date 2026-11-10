@@ -4,8 +4,6 @@
   <img src="assets/banner-light.svg" alt="0xThiagoAmaral / Research System — systems, security and technical research" width="100%">
 </picture>
 
-# Thiago Amaral
-
 **IT infrastructure · Systems research · Security tooling**
 
 My professional background is in IT support and infrastructure, from technical internship to Tier-3 support. Outside that work, I build and document tools for understanding how software and systems behave: process memory inspection, Source 2 data extraction and automation. I'm also exploring applications of AI in technical workflows.
